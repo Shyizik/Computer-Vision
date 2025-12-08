@@ -23,7 +23,7 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # === РЕЖИМ 1: LANDSAT (Низька якість - Плями) ===
+    # === LANDSAT (Низька якість - Плями) ===
     if mode_current == 'low':
         blur_val = cv2.getTrackbarPos('Blur', window_name)
         thresh_val = cv2.getTrackbarPos('Threshold', window_name)
@@ -32,7 +32,7 @@ def on_trackbar(val):
         if blur_val % 2 == 0: blur_val += 1
         if blur_val < 1: blur_val = 1
 
-        # Фільтрація шумів (Лекція 3)
+        # Фільтрація шумів
         blurred = cv2.medianBlur(img_display, blur_val)
         gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
 
@@ -57,7 +57,7 @@ def on_trackbar(val):
         cv2.imshow(window_name, output)
         cv2.imshow('Mask View', binary)
 
-    # === РЕЖИМ 2: BING (Висока якість - Контури/Стіни) ===
+    # === BING (Висока якість - Контури/Стіни) ===
     elif mode_current == 'bing':
         c_min = cv2.getTrackbarPos('Canny Min', window_name)
         c_max = cv2.getTrackbarPos('Canny Max', window_name)
@@ -93,7 +93,7 @@ def on_trackbar(val):
 
                 if x <= 5 or y <= 5 or (x + w) >= w_img - 5 or (y + h) >= h_img - 5: continue
 
-                # === ГЕОМЕТРИЧНИЙ АНАЛІЗ (Лекція 4) ===
+                # === ГЕОМЕТРИЧНИЙ АНАЛІЗ ===
                 rect_area = w * h
                 extent = float(area) / rect_area
 
@@ -109,7 +109,6 @@ def on_trackbar(val):
                 cv2.putText(output, str(count + 1), (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
                 count += 1
 
-        # Виправлено напис на більш універсальний
         cv2.putText(output, f"Buildings Found: {count}", (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         cv2.imshow(window_name, output)
         cv2.imshow('Mask View', closed)
