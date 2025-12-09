@@ -23,7 +23,7 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # === РЕЖИМ 1: LANDSAT (Низька якість - Плями) ===
+    # === LANDSAT (Низька якість - Плями) ===
     if mode_current == 'low':
         blur_val = cv2.getTrackbarPos('Blur', window_name)
         thresh_val = cv2.getTrackbarPos('Threshold', window_name)
@@ -57,7 +57,7 @@ def on_trackbar(val):
         cv2.imshow(window_name, output)
         cv2.imshow('Mask View', binary)
 
-    # === РЕЖИМ 2: BING (Висока якість - Контури/Стіни) ===
+    # === BING (Висока якість - Контури/Стіни) ===
     elif mode_current == 'bing':
         c_min = cv2.getTrackbarPos('Canny Min', window_name)
         c_max = cv2.getTrackbarPos('Canny Max', window_name)
