@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="download">
-      <change beforePath="$PROJECT_DIR$/.idea/CV Labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CV Labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="add new photo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_2/Lab_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_2/Lab_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_2/bing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_2/bing.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +28,12 @@
     &quot;assignee&quot;: &quot;Shyizik&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Shyizik/Computer-Vision.git",
-    "accountId": "ff752a07-114a-48d8-9e1c-98172f5c45ed"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Shyizik/Computer-Vision.git&quot;,
+    &quot;accountId&quot;: &quot;ff752a07-114a-48d8-9e1c-98172f5c45ed&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -118,11 +114,28 @@
       <option name="project" value="LOCAL" />
       <updated>1764798852393</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="download">
+      <option name="closed" value="true" />
+      <created>1765064488485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765064488485</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add new photo">
+      <option name="closed" value="true" />
+      <created>1765064570470</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765064570470</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="download" />
-    <option name="LAST_COMMIT_MESSAGE" value="download" />
+    <MESSAGE value="add new photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new photo" />
   </component>
 </project>
