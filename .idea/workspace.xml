@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="add new photo">
-      <change beforePath="$PROJECT_DIR$/.idea/CV Labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CV Labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_3/Lab_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_3/Lab_3.py" afterDir="false" />
-    </list>
+    <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,12 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1765285734446</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upload">
+      <option name="closed" value="true" />
+      <created>1765289534000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765289534000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="download" />
     <MESSAGE value="add new photo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new photo" />
+    <MESSAGE value="upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
 </project>
