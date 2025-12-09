@@ -23,22 +23,43 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # === РЕЖИМ 1: LANDSAT (Низька якість - Плями) ===
+    # === LANDSAT ===
     if mode_current == 'low':
+        # Отримуємо значення з повзунків
         blur_val = cv2.getTrackbarPos('Blur', window_name)
         thresh_val = cv2.getTrackbarPos('Threshold', window_name)
         min_area = cv2.getTrackbarPos('Min Area', window_name)
 
+        # Отримуємо значення
+        clip_val = cv2.getTrackbarPos('Contrast', window_name)
+        clip_limit = clip_val / 10.0 if clip_val > 0 else 0.1
+
+        # 1. Попередній процесинг
         if blur_val % 2 == 0: blur_val += 1
         if blur_val < 1: blur_val = 1
 
-        # Фільтрація шумів
-        blurred = cv2.medianBlur(img_display, blur_val)
-        gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
+        # Конвертація в сірий
+        gray = cv2.cvtColor(img_display, cv2.COLOR_BGR2GRAY)
 
-        # Сегментація (бінаризація)
-        _, binary = cv2.threshold(gray, thresh_val, 255, cv2.THRESH_BINARY)
+        # --- Покращення якості ---
+        # CLAHE (Contrast Limited Adaptive Histogram Equalization)
+        # Це дозволяє виділити будівлі, які зливаються з фоном
+        clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(gray)
 
+        # Фільтрація (зберігаємо Median або міняємо на Gaussian)
+        blurred = cv2.medianBlur(enhanced, blur_val)
+
+        # 2. Сегментація
+        _, binary = cv2.threshold(blurred, thresh_val, 255, cv2.THRESH_BINARY)
+
+        # --- R&D Етап (Розділення об'єктів) ---
+        # Використовуємо морфологію, щоб "розрізати" злиті плями будівель
+        kernel = np.ones((3, 3), np.uint8)
+        # ERODE/OPEN зменшує білі плями, розділяючи перемички між будинками
+        binary = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel, iterations=1)
+
+        # 3. Пошук контурів
         contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         count = 0
@@ -46,18 +67,24 @@ def on_trackbar(val):
             area = cv2.contourArea(cnt)
             if area > min_area:
                 x, y, w, h = cv2.boundingRect(cnt)
-                # Фільтр рамки
-                if x <= 5 or y <= 5 or (x + w) >= w_img - 5 or (y + h) >= h_img - 5: continue
 
-                cv2.rectangle(output, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                cv2.putText(output, str(count + 1), (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                # Фільтрація країв
+                if x <= 5 or y <= 5 or (x + w) >= w_img - 5 or (y + h) >= h_img - 5:
+                    continue
+
+                # Малюємо
+                cv2.rectangle(output, (x, y), (x + w, y + h), (0, 255, 0), 1)
+                # Центр об'єкта для номера
+                cx, cy = x + w // 2, y + h // 2
+                cv2.putText(output, str(count + 1), (cx - 5, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 255), 1)
                 count += 1
 
-        cv2.putText(output, f"Objects: {count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+        # Вивід статистики
+        cv2.putText(output, f"Buildings (Landsat): {count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
         cv2.imshow(window_name, output)
         cv2.imshow('Mask View', binary)
 
-    # === РЕЖИМ 2: BING (Висока якість - Контури/Стіни) ===
+    # === BING (Висока якість - Контури/Стіни) ===
     elif mode_current == 'bing':
         c_min = cv2.getTrackbarPos('Canny Min', window_name)
         c_max = cv2.getTrackbarPos('Canny Max', window_name)
@@ -154,6 +181,7 @@ def start_processing(mode):
         cv2.createTrackbar('Blur', window_name, 15, 30, on_trackbar)
         cv2.createTrackbar('Threshold', window_name, 100, 255, on_trackbar)
         cv2.createTrackbar('Min Area', window_name, 500, 5000, on_trackbar)
+        cv2.createTrackbar('Contrast', window_name, 30, 100, on_trackbar)
     else:
         cv2.createTrackbar('Canny Min', window_name, 50, 255, on_trackbar)
         cv2.createTrackbar('Canny Max', window_name, 150, 255, on_trackbar)

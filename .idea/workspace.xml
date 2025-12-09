@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload">
-      <change beforePath="$PROJECT_DIR$/.idea/CV Labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CV Labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/Lab_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/bing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/bing1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/low.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_2/Lab_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_2/Lab_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +33,12 @@
     &quot;assignee&quot;: &quot;Shyizik&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Shyizik/Computer-Vision",
-    "accountId": "cb2e53a4-cf6c-49ea-bd27-94c1d1d3890c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Shyizik/Computer-Vision&quot;,
+    &quot;accountId&quot;: &quot;cb2e53a4-cf6c-49ea-bd27-94c1d1d3890c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -49,7 +52,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Lab_1.executor": "Run",
-    "Python.Lab_2.executor": "Run",
+    "Python.Lab_2.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -57,10 +60,14 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/mrbod/PycharmProjects/PythonProject2",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_1" />
     </key>
@@ -117,11 +124,20 @@
       <option name="project" value="LOCAL" />
       <updated>1764798852393</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upload">
+      <option name="closed" value="true" />
+      <created>1765196718995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765196718995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="download" />
-    <option name="LAST_COMMIT_MESSAGE" value="download" />
+    <MESSAGE value="upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
 </project>
