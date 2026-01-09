@@ -2,14 +2,10 @@ import cv2
 import numpy as np
 import os
 
-# ==========================================
-# КОНФІГУРАЦІЯ
-# ==========================================
 FILE_LANDSAT = 'low.jpg'
 FILE_BING = 'bing.jpg'
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
-# ==========================================
 
 img_display = None
 mode_current = None
@@ -23,12 +19,8 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # Змінна для відображення маски
     display_mask = np.zeros((h_img, w_img), dtype=np.uint8)
 
-    # ==========================================================
-    # РЕЖИМ 1: LANDSAT (ЕКСТРЕМАЛЬНА ВИДИМІСТЬ)
-    # ==========================================================
     if mode_current == 'low':
         thresh_white = cv2.getTrackbarPos('White Thresh', window_name)
         thresh_black = cv2.getTrackbarPos('Black Thresh', window_name)
@@ -71,25 +63,16 @@ def on_trackbar(val):
                 x, y, w, h = cv2.boundingRect(cnt)
                 if x <= 2 or y <= 2 or (x + w) >= w_img - 2 or (y + h) >= h_img - 2: continue
 
-                # === ЗМІНИ ТУТ: ДУЖЕ ТОВСТІ ЛІНІЇ ===
-                # Рамка товщиною 5 (щоб було видно на пікселях)
                 cv2.rectangle(output, (x, y), (x + w, y + h), (0, 255, 0), 5)
 
-                # Підкладка під текст (щоб цифри не зливалися з фоном)
-                cv2.rectangle(output, (x, y - 50), (x + 70, y), (0, 0, 0), -1)
-
-                # Величезний текст (розмір 2.0, товщина 4)
+                cv2.rectangle(output, (x, y - 50), (x + 80, y), (0, 0, 0), -1)
                 cv2.putText(output, str(count + 1), (x + 5, y - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 255, 255), 4)
+                            cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 255, 255), 5)
                 count += 1
 
-        # Лічильник теж великий
         cv2.rectangle(output, (0, 0), (350, 80), (0, 0, 0), -1)
         cv2.putText(output, f"Found: {count}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 255, 0), 4)
 
-    # ==========================================================
-    # РЕЖИМ 2: BING
-    # ==========================================================
     elif mode_current == 'bing':
         blur_val = cv2.getTrackbarPos('Texture Smooth', window_name)
         contrast_clip = cv2.getTrackbarPos('Contrast Boost', window_name)
@@ -143,17 +126,17 @@ def on_trackbar(val):
             solidity = float(area) / hull_area
             if solidity < solidity_thresh: continue
 
-            cv2.rectangle(output, (x, y), (x + w, y + h), (0, 255, 0), 2)
-            cv2.rectangle(output, (x, y - 25), (x + 40, y), (0, 0, 0), -1)
-            cv2.putText(output, str(count + 1), (x + 2, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2)
+            cv2.rectangle(output, (x, y), (x + w, y + h), (0, 255, 0), 3)
+
+            cv2.rectangle(output, (x, y - 30), (x + 50, y), (0, 0, 0), -1)
+            cv2.putText(output, str(count + 1), (x + 2, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 255), 2)
             count += 1
 
-        cv2.rectangle(output, (0, 0), (220, 50), (0, 0, 0), -1)
-        cv2.putText(output, f"Found: {count}", (10, 35), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 0), 2)
+        cv2.rectangle(output, (0, 0), (250, 60), (0, 0, 0), -1)
+        cv2.putText(output, f"Found: {count}", (10, 45), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 2)
 
     cv2.imshow(window_name, output)
 
-    # Виправляємо проблему "сірого вікна"
     mask_color = cv2.cvtColor(display_mask, cv2.COLOR_GRAY2BGR)
     cv2.imshow('Logic View', mask_color)
 
