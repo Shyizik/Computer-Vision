@@ -23,7 +23,7 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # === LANDSAT (Низька якість - Плями) ===
+    # ===LANDSAT (Низька якість - Плями)===
     if mode_current == 'low':
         blur_val = cv2.getTrackbarPos('Blur', window_name)
         thresh_val = cv2.getTrackbarPos('Threshold', window_name)
