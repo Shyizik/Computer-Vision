@@ -200,12 +200,12 @@ def start_processing(mode):
     if mode == 'low':
         scale = 10
         img_display = cv2.resize(original, (w * scale, h * scale), interpolation=cv2.INTER_NEAREST)
-        window_name = "Landsat (Guru Fix)"
+        window_name = "Landsat"
     else:
         target_width = WINDOW_WIDTH
         scale = target_width / w if w > target_width else 1
         img_display = cv2.resize(original, (int(w * scale), int(h * scale)))
-        window_name = "Bing Final Fix"
+        window_name = "Bing"
 
     # Створення вікон
     cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
