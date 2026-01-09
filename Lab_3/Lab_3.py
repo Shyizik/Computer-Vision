@@ -24,9 +24,9 @@ def on_trackbar(val):
     output = img_display.copy()
     h_img, w_img = img_display.shape[:2]
 
-    # ==========================================================
+    # =========================================================
     # MODE 1: LANDSAT (Dark Object Detection)
-    # ==========================================================
+    # =========================================================
     if mode_current == 'low':
         # UI Parameters
         blur_val = cv2.getTrackbarPos('Blur', window_name)
