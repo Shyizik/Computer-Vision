@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload">
+      <change afterPath="$PROJECT_DIR$/Lab_4/Lab_4_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_4/Lab_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_4/Lab_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_4/Lab_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_4/Lab_4_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Lab_4">
+  <component name="RunManager" selected="Python.Lab_4_1">
     <configuration name="Lab_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CV Labs" />
       <option name="ENV_FILES" value="" />
@@ -115,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Lab_4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Lab_4_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CV Labs" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,7 +129,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lab_4/Lab_4.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_4\Lab_4_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lab_4" />
+        <item itemvalue="Python.Lab_4_1" />
         <item itemvalue="Python.Lab_3" />
         <item itemvalue="Python.Lab_2" />
       </list>
@@ -232,7 +233,31 @@
       <option name="project" value="LOCAL" />
       <updated>1767961823749</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964356985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964356985</updated>
+    </task>
+    <task id="LOCAL-00011" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964563547</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964563547</updated>
+    </task>
+    <task id="LOCAL-00012" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964709645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964709645</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
