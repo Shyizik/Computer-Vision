@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_4/Lab_4_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_4/Lab_4_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_4/Lab_4_2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +32,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Shyizik/Computer-Vision.git&quot;,
-    &quot;accountId&quot;: &quot;ff752a07-114a-48d8-9e1c-98172f5c45ed&quot;
+    &quot;url&quot;: &quot;https://github.com/Shyizik/Computer-Vision&quot;,
+    &quot;accountId&quot;: &quot;cb2e53a4-cf6c-49ea-bd27-94c1d1d3890c&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -42,28 +44,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Lab_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab_3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Lab_1.executor": "Run",
+    "Python.Lab_2.executor": "Run",
+    "Python.Lab_3.executor": "Run",
+    "Python.Lab_4.executor": "Run",
+    "Python.Lab_4_1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/mrbod/PycharmProjects/PythonProject2",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Lab_3">
+  <component name="RunManager" selected="Python.Lab_4_1">
     <configuration name="Lab_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CV Labs" />
       <option name="ENV_FILES" value="" />
@@ -108,8 +117,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Lab_4_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CV Labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lab_4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_4\Lab_4_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lab_4_1" />
         <item itemvalue="Python.Lab_3" />
         <item itemvalue="Python.Lab_2" />
       </list>
@@ -118,7 +150,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
@@ -138,52 +170,107 @@
       <option name="project" value="LOCAL" />
       <updated>1764798852393</updated>
     </task>
-    <task id="LOCAL-00002" summary="download">
+    <task id="LOCAL-00002" summary="upload">
       <option name="closed" value="true" />
-      <created>1765064488485</created>
+      <created>1765196718995</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1765064488485</updated>
+      <updated>1765196718995</updated>
     </task>
-    <task id="LOCAL-00003" summary="add new photo">
+    <task id="LOCAL-00003" summary="upload">
       <option name="closed" value="true" />
-      <created>1765064570470</created>
+      <created>1765238783976</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1765064570470</updated>
+      <updated>1765238783976</updated>
     </task>
-    <task id="LOCAL-00004" summary="add new photo">
+    <task id="LOCAL-00004" summary="upload">
       <option name="closed" value="true" />
-      <created>1765285734446</created>
+      <created>1765537924941</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1765285734446</updated>
+      <updated>1765537924941</updated>
     </task>
     <task id="LOCAL-00005" summary="upload">
       <option name="closed" value="true" />
-      <created>1765289534000</created>
+      <created>1765537930939</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1765289534000</updated>
+      <updated>1765537930939</updated>
     </task>
     <task id="LOCAL-00006" summary="upload">
       <option name="closed" value="true" />
-      <created>1765290014983</created>
+      <created>1765547430808</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1765290014983</updated>
+      <updated>1765547430808</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767961589352</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767961589352</updated>
+    </task>
+    <task id="LOCAL-00008" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767961638119</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767961638119</updated>
+    </task>
+    <task id="LOCAL-00009" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767961823749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767961823749</updated>
+    </task>
+    <task id="LOCAL-00010" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964356985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964356985</updated>
+    </task>
+    <task id="LOCAL-00011" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964563547</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964563547</updated>
+    </task>
+    <task id="LOCAL-00012" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767964709645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1767964709645</updated>
+    </task>
+    <task id="LOCAL-00013" summary="upload">
+      <option name="closed" value="true" />
+      <created>1767965663567</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1767965663567</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="download" />
-    <MESSAGE value="add new photo" />
     <MESSAGE value="upload" />
     <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
