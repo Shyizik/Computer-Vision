@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload">
-      <change beforePath="$PROJECT_DIR$/.idea/CV Labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CV Labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab_5/Lab_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_5/Lab_5.py" afterDir="false" />
     </list>
@@ -77,7 +75,7 @@
       <recent name="C:\Users\mrbod\PycharmProjects\PythonProject2\Lab_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Lab_6">
+  <component name="RunManager" selected="Python.Lab_5">
     <configuration name="Lab_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CV Labs" />
       <option name="ENV_FILES" value="" />
@@ -190,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lab_6" />
         <item itemvalue="Python.Lab_5" />
+        <item itemvalue="Python.Lab_6" />
         <item itemvalue="Python.Lab_4_1" />
         <item itemvalue="Python.Lab_3" />
         <item itemvalue="Python.Lab_2" />
@@ -341,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768441568113</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="upload">
+      <option name="closed" value="true" />
+      <created>1768592007061</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1768592007061</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
