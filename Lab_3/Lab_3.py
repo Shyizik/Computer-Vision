@@ -184,7 +184,7 @@ def start_processing(mode):
     cv2.destroyAllWindows()
 
 
-if __name__ == "__main__":
+if __name__ == "__main__"
     choice = input("Select Mode (1-Landsat, 2-Bing): ")
     if choice == '1':
         start_processing('low')
