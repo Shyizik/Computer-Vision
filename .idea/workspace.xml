@@ -7,8 +7,6 @@
     <list default="true" id="eb43b932-b646-4fa9-947e-c56b94205ca2" name="Changes" comment="upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab_6/Lab_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_6/Lab_6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_6/assets/dog_face.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_6/traffic.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768592891719</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="upload">
+      <option name="closed" value="true" />
+      <created>1768598450867</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1768598450867</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
