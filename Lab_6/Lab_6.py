@@ -1,7 +1,5 @@
 import cv2
 import os
-import time
-import numpy as np
 
 # Налаштування шляхів до ресурсів
 base_dir = os.path.dirname(os.path.abspath(__file__))
